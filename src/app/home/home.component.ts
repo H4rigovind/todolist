@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TaskService } from '../task.service';
+import { TaskService } from '../Services/task.service';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 

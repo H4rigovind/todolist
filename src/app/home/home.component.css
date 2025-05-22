@@ -10,17 +10,18 @@
   max-width: 100%;
   display: flex; 
   justify-content: center; 
-  align-items: flex-start;
-  padding: 80px 20px 20px;
-  background: linear-gradient(90deg, #2ad2db, #4387bf 35%, #11ada8);
+  align-items: center;
+  padding: 30px 10px 20px;
+  background: linear-gradient(90deg, #27c2ca, #3b8cce 35%, #169a96);
 }
 
 .todo {
-  background: #fff;
-  padding: 40px;
-  max-width: 800px;
-  width: 90%;
-  border-radius: 20px;
+  background: #ffffff;
+  padding: 20px;
+  
+  width: 700px;
+  height: 350px;
+  border-radius: 10px;
   box-shadow: 0 15px 40px rgba(0,0,0,0.25);
   color: #2c3e50;
 }
@@ -51,7 +52,7 @@ button {
   padding: 14px 25px;
   border-radius: 30px;
   border: none;
-  background: #ff6b3d;
+  background: #0a3362;
   color: white;
   font-weight: bold;
   cursor: pointer;
@@ -59,7 +60,7 @@ button {
 }
 
 button:hover {
-  background: #d73d0a;
+  background: #183897;
 }
 
 ul {
@@ -96,8 +97,8 @@ li {
 }
 
 .circle.completed {
-  background: #ff6b3d;
-  border-color: #ff6b3d;
+  background: #1d4cd7;
+  border-color: #121080;
 }
 
 .circle.completed::after {
