@@ -1,0 +1,135 @@
+* {
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+  height: 100vh;
+  max-width: 100%;
+  display: flex; 
+  justify-content: center; 
+  align-items: flex-start;
+  padding: 80px 20px 20px;
+  background: linear-gradient(90deg, #2ad2db, #4387bf 35%, #11ada8);
+}
+
+.todo {
+  background: #fff;
+  padding: 40px;
+  max-width: 800px;
+  width: 90%;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+  color: #2c3e50;
+}
+
+h2 {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 28px;
+}
+
+.input {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 14px 20px;
+  border-radius: 30px;
+  border: none;
+  background: #eeebeb;
+  font-size: 16px;
+  outline: none;
+}
+
+button {
+  padding: 14px 25px;
+  border-radius: 30px;
+  border: none;
+  background: #ff6b3d;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #d73d0a;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.task-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.circle.completed {
+  background: #ff6b3d;
+  border-color: #ff6b3d;
+}
+
+.circle.completed::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+}
+
+.strike {
+  flex-grow: 1;
+  font-size: 16px;
+  color: #aaa;
+  text-decoration: wavy;
+  word-break: break-word;
+}
+
+
+
+.remove {
+  font-size: 28px;
+  cursor: pointer;
+  color: #888;
+  margin-left: 14px;
+  user-select: none;
+  transition: color 0.2s ease;
+}
+
+.remove:hover {
+  color: #fe1515;
+}

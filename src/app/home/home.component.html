@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="todo">
+    <h2>To-Do List <span>📝</span></h2>
+
+    <div class="input">
+      <input type="text" placeholder="Add your text" [(ngModel)]="newTask" />
+      <button (click)="addTask()">Add</button>
+    </div>
+
+    <ul>
+      <li *ngFor="let task of tasks">
+  <div class="task-wrapper">
+    <span class="circle" [class.completed]="task.completed" (click)="toggleTask(task.id)"></span>
+    <span [class.strike]="task.completed">{{ task.title }}</span>
+  </div>
+  <span class="remove" (click)="removeTask(task.id)">×</span>
+</li>
+
+    </ul>
+  </div>
+</div>
